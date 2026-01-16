@@ -1,7 +1,7 @@
 function Homepage() {
   return (
-    <div className="text-gray-900 min-h-screen bg-gray-100">
-      <h1>Hi</h1>
+    <div className="flex flex-col justify-center items-center text-gray-900 min-h-screen bg-gray-100">
+      getGuide will be ready soon...
     </div>
   );
 }
