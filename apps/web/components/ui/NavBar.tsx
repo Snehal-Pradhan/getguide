@@ -8,10 +8,10 @@ function NavBar() {
       <div className="border h-10 w-40 text-4xl ">GetGuide</div>
       <div className="border h-10 flex-1"></div>
       <div className="border h-10 flex justify-end gap-5 items-center">
-        <Button>
+        <Button asChild>
           <SignInButton />
         </Button>
-        <Button>
+        <Button asChild>
           <SignUpButton />
         </Button>
       </div>
