@@ -7,7 +7,14 @@ async function Homepage() {
         <div className="h-full w-full flex justify-end gap-10">
           <div className="flex-1 flex justify-start items-center h-full">
             <div className="w-40 text-4xl"> GetGuide</div>
-            <div className="flex-1 flex justify-start items-center gap-10"></div>
+            <div className="flex-1 flex justify-start items-center gap-10">
+              <Button asChild>
+                <SignInButton />
+              </Button>
+              <Button asChild>
+                <SignUpButton />
+              </Button>
+            </div>
           </div>
         </div>
       </div>
