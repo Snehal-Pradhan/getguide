@@ -1,6 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { SignInButton, SignUpButton } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs/server";
+import { redirect } from "next/navigation";
 async function Homepage() {
+  const { isAuthenticated } = await auth();
+  if (isAuthenticated) {
+    redirect("/workspace");
+  }
+
   return (
     <div>
       <div className="fixed w-full bg-gray-200 h-20 px-32 py-4">
