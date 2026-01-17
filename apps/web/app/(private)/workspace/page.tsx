@@ -1,15 +1,7 @@
-import { UserAvatar, UserButton } from "@clerk/nextjs";
-
-import React from "react";
-
-function WorkspacePage() {
+export default function Page() {
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center">
-          <h1>Workspace</h1>
-      <UserAvatar />
-      <UserButton />
+    <div className="p-8">
+      <h1 className="text-4xl font-bold tracking-tight">Dashboard</h1>
     </div>
   );
 }
-
-export default WorkspacePage;
